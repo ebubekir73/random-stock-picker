@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Hisse Seçici</title>
+    <link rel="icon"  type="image/x-icon" href="img/favicon.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #EF320F;
+            font-family: Arial, sans-serif;
+        }
+        #output-box {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #refresh-button {
+            width: 10%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #F0D42B;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #refresh-button a{
+            display: block;
+            width: 100%;
+            line-height: 50px;    
+        }
+        #refresh-button a :hover{
+            display: block;
+
+        }
+        .img-eye{
+            width: 300px;
+            height: 200px;
+            background-image: url(img/fyou.jpg);
+            background-size: 100%;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="img-eye"></div>
+    <div id="output-box">
+        <!-- Python function output will be displayed here -->
+        <p id="function-output">{{ output }}</p>
+    </div>
+    <div id="refresh-button">
+    <button><a onClick="window.location.reload()">Yenile</a></button>
+    </div>
+</body>
+</html>
